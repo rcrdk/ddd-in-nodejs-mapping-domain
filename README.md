@@ -1,4 +1,6 @@
 # 🔎 Mapping a Domain Challenge
+[Jump to mapping 🖱️](#-mapping)
+
 I worked in this analysis during my latest studies on Node lessons with DDD at [Rocketseat](https://www.rocketseat.com.br). In this challenge I had to read a conversation between and Domain Expert and the Developer of application. The objective is to identify all entities and use cases fo this application based on below conversation:
 
 - 🧑🏼‍💻 **Dev:** Hey, thanks for the meeting. To begin with, which are the main functionalities would you like to this stock management system should have?
@@ -31,8 +33,21 @@ Based on the conversation, I should have answer this questions:
 1) Which are the domain entities?
 2) Which actions (use cases) this application should have?
 
+---
 
 # 📋 Mapping
+
+## Use Cases
+
+- [ ] Should be able to define or update a min quantity of a product in stock.
+- [ ] Should be able to send a automatic notification by email and in-app when a product quantity has a low quantity in stock.
+- [ ] Should be able to make automatic orders to supliers when a product has low quantity in stock.
+- [ ] Should be able to notificate managers and suppliers when a automatic orders is made.
+- [ ] Should be able to find a product by it's unique identifier.
+- [ ] Should be able to search for products by it's caracteristics.	
+- [ ] Should be able to search for most selled products in a period of time.
+- [ ] Should be able to get the history of how many products was selled in a period of time with the profit information included.
+- [ ] Should be able to get the products trending in stock along the time.
 
 ## Entities
 
@@ -104,13 +119,3 @@ Based on the conversation, I should have answer this questions:
   - id
   - message
   - sent at
-
-## Use Cases
-- Should be able to define or update a min quantity of a product in stock.
-- Should be able to send a automatic notification by email and in-app when a product quantity has a low quantity in stock.
-- Should be able to make automatic orders to supliers when a products has low quantity in stock.
-- Should be able to notificate managers and suppliers when a automatic orders is made.
-- Should be able to find a product by it's unique identifier.
-- Should be able to search for products by it's caracteristics.	
-- Should be able to search for most selled products in a period of time.
-- Should be able to get the history of how many products was selled in a period of time with the profit information included.
