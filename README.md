@@ -1,7 +1,7 @@
 # 🔎 Mapping a Domain Challenge
 [Jump to mapping 🖱️](#-mapping)
 
-I worked in this analysis during my latest studies on Node lessons with DDD at [Rocketseat](https://www.rocketseat.com.br). In this challenge I had to read a conversation between and Domain Expert and the Developer of application. The objective is to identify all entities and use cases fo this application based on below conversation:
+I worked in this analysis during my latest studies on Node lessons with DDD at [Rocketseat](https://www.rocketseat.com.br). In this challenge I had to read a conversation between and Domain Expert and the Developer of application. The objective is to identify all entities and use cases for this application based on below conversation:
 
 - 🧑🏼‍💻 **Dev:** Hey, thanks for the meeting. To begin with, which are the main functionalities would you like to this stock management system should have?
 
@@ -17,13 +17,13 @@ I worked in this analysis during my latest studies on Node lessons with DDD at [
 
 - 🧑🏼‍💻 **Dev:** And how would you like to receive this reminders? By e-mail, SMS or other method?
 
-- 🧙🏻‍♂️ **Domain Expert:** It would be great if if we could receive reminders by e-mail and also by a notification in our stock management system.
+- 🧙🏻‍♂️ **Domain Expert:** It would be great if we could receive reminders by e-mail and also by a notification in our stock management system.
 
 - 🧑🏼‍💻 **Dev:** Got it. And about the functionality of sales and stock history, which kind of informations would you like to see?
 
 - 🧙🏻‍♂️ **Domain Expert:** We would like to see how many products we sale in a certain period, what was the profit that each product brought and which products we sale the most on each period. Also, it would be useful if we could watch for trends in stock along the time, to help us to make proper buying decisions. 
 
-- 🧑🏼‍💻 **Dev:** Ok, and do you have any other functionality that would you like to see on th system?
+- 🧑🏼‍💻 **Dev:** Ok, and do you have any other functionality that would you like to see on the system?
 
 - 🧙🏻‍♂️ **Domain Expert:** It would be very useful if the system could allow us to create and manage buying orders automatically, based on min quantities in stock defined and on sales trends. It would be great, also, if we could integrate our system with our suppliers, so we could receive automatic updates on delivery time of our new shipments.
 
@@ -40,13 +40,13 @@ Based on the conversation, I should have answer this questions:
 ## Use Cases
 
 - [ ] Should be able to define or update a min quantity of a product in stock.
-- [ ] Should be able to send a automatic notification by email and in-app when a product quantity has a low quantity in stock.
-- [ ] Should be able to make automatic orders to supliers when a product has low quantity in stock.
-- [ ] Should be able to notificate managers and suppliers when a automatic orders is made.
-- [ ] Should be able to find a product by it's unique identifier.
-- [ ] Should be able to search for products by it's caracteristics.	
-- [ ] Should be able to search for most selled products in a period of time.
-- [ ] Should be able to get the history of how many products was selled in a period of time with the profit information included.
+- [ ] Should be able to send an automatic notification by email and in-app when a product quantity has a low quantity in stock.
+- [ ] Should be able to make automatic orders to suppliers when a product has low quantity in stock.
+- [ ] Should be able to send a notification to managers and suppliers when a automatic orders is made.
+- [ ] Should be able to find a product by its unique identifier.
+- [ ] Should be able to search for products by it's characteristics.
+- [ ] Should be able to search for most sold products in a period of time.
+- [ ] Should be able to get the history of how many products was sold in a period of time with the profit information included.
 - [ ] Should be able to get the products trending in stock along the time.
 
 ## Entities
@@ -86,7 +86,7 @@ Based on the conversation, I should have answer this questions:
   - price total
   - status
   - created at
-  - updatedz at
+  - updated at
 
 - **Order products:** 
   - id
@@ -106,9 +106,9 @@ Based on the conversation, I should have answer this questions:
   - message
   - created_at
 
-- **Shipments:** add products to stock from supliers
+- **Shipments:** add products to stock from suppliers
   - id
-  - suplier id
+  - supplier id
   - product id
   - status
   - created at
