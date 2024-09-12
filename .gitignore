@@ -1,8 +1,0 @@
-# Application folders
-node_modules
-
-# Files
-README-LOCAL.md
-
-# Enviroment variables
-.env
